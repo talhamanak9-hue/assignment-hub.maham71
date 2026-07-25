@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+<base target="_blank">
 </head>
 <body>
 
@@ -35,7 +36,7 @@
         </div>
     </nav>
 
-    <!-- ===== FLOATING SIDE CONTACT ICONS (Sab wapas) ===== -->
+    <!-- ===== FLOATING SIDE CONTACT ICONS ===== -->
     <div class="side-icons">
         <a href="https://wa.me/923704860105" target="_blank" rel="noopener" class="icon-whatsapp" data-label="Chat on WhatsApp">
             <i class="fab fa-whatsapp"></i>
@@ -54,7 +55,7 @@
         </a>
     </div>
 
-    <!-- ===== HERO SECTION ===== -->
+    <!-- ===== HERO SECTION (PEHLE) ===== -->
     <section class="hero">
         <div class="hero-container">
             <div class="hero-content">
@@ -96,6 +97,105 @@
                             <p>Support Available</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT / QUOTE SECTION (HERO KE NICHE) ===== -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header fade-in" style="margin-bottom: 40px;">
+                <h2>Get Your Free Quote</h2>
+                <p>Fill the form below or chat with us on WhatsApp. We deliver A+ quality work on time — 100% confidential.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info fade-in">
+                    <a href="https://wa.me/923704860105" target="_blank" class="quote-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        <div class="quote-btn-text">
+                            <span class="quote-btn-title">Get Free Quote</span>
+                            <span class="quote-btn-sub">Chat on WhatsApp Now</span>
+                        </div>
+                    </a>
+
+                    <div class="payment-methods">
+                        <h4><i class="fas fa-wallet"></i> Payment Methods</h4>
+
+                        <div class="payment-item" onclick="openPaymentModal('esaypaisa')">
+                            <div class="payment-logo">
+                                <img src="https://upload.wikimedia.org/wikipedia/en/0/0e/Easypaisa_logo.png" alt="Esaypaisa" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div class="payment-fallback" style="display:none;">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                            </div>
+                            <div class="payment-info">
+                                <h5>Esaypaisa</h5>
+                                <p>Click to view account number</p>
+                            </div>
+                        </div>
+
+                        <div class="payment-item" onclick="openPaymentModal('jazzcash')">
+                            <div class="payment-logo">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/JazzCash_logo_%282025%29.png" alt="JazzCash" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div class="payment-fallback" style="display:none;">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                            </div>
+                            <div class="payment-info">
+                                <h5>JazzCash</h5>
+                                <p>Click to view account number</p>
+                            </div>
+                        </div>
+
+                        <div class="payment-item" onclick="openPaymentModal('bank')">
+                            <div class="payment-logo">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div class="payment-info">
+                                <h5>Bank Transfer</h5>
+                                <p>Click to view account details</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form fade-in">
+                    <h3><i class="fas fa-paper-plane"></i> Send Assignment Details</h3>
+                    <form id="quoteForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Email Address" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Select Service Type</option>
+                                <option>Essay Writing</option>
+                                <option>Research Paper</option>
+                                <option>Thesis / Dissertation</option>
+                                <option>Editing & Proofreading</option>
+                                <option>STEM Assignment</option>
+                                <option>Admission Essay</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject / Topic">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Describe your assignment requirements, deadline, word count, and any specific instructions..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="file" style="padding: 10px; font-size: 0.9rem;">
+                        </div>
+                        <a href="https://wa.me/923704860105" target="_blank" class="btn-primary" style="width: 100%; justify-content: center; padding: 16px; display: flex;">
+                            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                        </a>
+                    </form>
                 </div>
             </div>
         </div>
@@ -440,109 +540,6 @@
         </div>
     </section>
 
-    <!-- ===== CONTACT SECTION (Updated) ===== -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info fade-in">
-                    <h3>Get Your Free Quote</h3>
-                    <p>Ready to boost your grades? Click below to chat with us directly on WhatsApp and get your bespoke price and timeline within minutes.</p>
-                    
-                    <!-- Get Free Quote Button -->
-                    <a href="https://wa.me/923704860105" target="_blank" class="quote-btn">
-                        <i class="fab fa-whatsapp"></i>
-                        <div class="quote-btn-text">
-                            <span class="quote-btn-title">Get Free Quote</span>
-                            <span class="quote-btn-sub">Chat on WhatsApp Now</span>
-                        </div>
-                    </a>
-
-                    <!-- ===== PAYMENT METHODS ===== -->
-                    <div class="payment-methods">
-                        <h4><i class="fas fa-wallet"></i> Payment Methods</h4>
-                        
-                        <!-- Esaypaisa -->
-                        <div class="payment-item" onclick="openPaymentModal('esaypaisa')">
-                            <div class="payment-logo">
-                                <img src="https://upload.wikimedia.org/wikipedia/en/0/0e/Easypaisa_logo.png" alt="Esaypaisa" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                                <div class="payment-fallback" style="display:none;">
-                                    <i class="fas fa-mobile-alt"></i>
-                                </div>
-                            </div>
-                            <div class="payment-info">
-                                <h5>Esaypaisa</h5>
-                                <p>Click to view account number</p>
-                            </div>
-                        </div>
-                        
-                        <!-- JazzCash -->
-                        <div class="payment-item" onclick="openPaymentModal('jazzcash')">
-                            <div class="payment-logo">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/JazzCash_logo_%282025%29.png" alt="JazzCash" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                                <div class="payment-fallback" style="display:none;">
-                                    <i class="fas fa-mobile-alt"></i>
-                                </div>
-                            </div>
-                            <div class="payment-info">
-                                <h5>JazzCash</h5>
-                                <p>Click to view account number</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Bank Transfer -->
-                        <div class="payment-item" onclick="openPaymentModal('bank')">
-                            <div class="payment-logo">
-                                <i class="fas fa-university"></i>
-                            </div>
-                            <div class="payment-info">
-                                <h5>Bank Transfer</h5>
-                                <p>Click to view account details</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contact-form fade-in">
-                    <h3><i class="fas fa-paper-plane"></i> Send Assignment Details</h3>
-                    <form id="quoteForm">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="text" placeholder="Your Name" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" placeholder="Email Address" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <select required>
-                                <option value="">Select Service Type</option>
-                                <option>Essay Writing</option>
-                                <option>Research Paper</option>
-                                <option>Thesis / Dissertation</option>
-                                <option>Editing & Proofreading</option>
-                                <option>STEM Assignment</option>
-                                <option>Admission Essay</option>
-                                <option>Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" placeholder="Subject / Topic">
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Describe your assignment requirements, deadline, word count, and any specific instructions..."></textarea>
-                        </div>
-                        <div class="form-group">
-                            <input type="file" style="padding: 10px; font-size: 0.9rem;">
-                        </div>
-                        <a href="https://wa.me/923704860105" target="_blank" class="btn-primary" style="width: 100%; justify-content: center; padding: 16px; display: flex;">
-                            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
-                        </a>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- ===== FOOTER ===== -->
     <footer>
         <div class="container">
@@ -601,14 +598,14 @@
             </div>
             <h3 id="modalTitle">Payment Number</h3>
             <p id="modalDesc">Use this number to send payment</p>
-            
+
             <div id="modalNumbers">
                 <div class="modal-number-box">
                     <div class="modal-number" id="modalNumber">+92 XXX XXXXXXX</div>
                     <div class="modal-number-label" id="modalNumberLabel">Account Number</div>
                 </div>
             </div>
-            
+
             <button class="modal-copy-btn" id="modalCopyBtn" onclick="copyModalNumber()">
                 <i class="fas fa-copy"></i> Copy All
             </button>
